@@ -1,0 +1,1101 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C26007D2D7E773900827D8E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C26007C2D7E773900827D8E /* WidgetKit.framework */; };
+		8C26007F2D7E773900827D8E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C26007E2D7E773900827D8E /* SwiftUI.framework */; };
+		8C2600902D7E773A00827D8E /* ShowTopStockIntentExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C26007A2D7E773900827D8E /* ShowTopStockIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C995D1D2D86768E008030EF /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2600A22D7E8FD600827D8E /* Intents.framework */; };
+		8C995D272D86768E008030EF /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2600AD2D7E8FD600827D8E /* IntentsUI.framework */; };
+		8C995D312D86768E008030EF /* ShowBalanceIntentUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C995D262D86768E008030EF /* ShowBalanceIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C995D342D86768E008030EF /* ShowBalanceIntent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C995D1C2D86768E008030EF /* ShowBalanceIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C995D482D86A488008030EF /* ShowBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C995D472D86A488008030EF /* ShowBalance.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58EAA2412D7900F700083F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58EAA2282D7900F500083F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58EAA22F2D7900F500083F5E;
+			remoteInfo = RiyalVest;
+		};
+		58EAA24B2D7900F700083F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58EAA2282D7900F500083F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58EAA22F2D7900F500083F5E;
+			remoteInfo = RiyalVest;
+		};
+		8C26008E2D7E773A00827D8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58EAA2282D7900F500083F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C2600792D7E773900827D8E;
+			remoteInfo = ShowTopStockIntentExtension;
+		};
+		8C995D2F2D86768E008030EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58EAA2282D7900F500083F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C995D252D86768E008030EF;
+			remoteInfo = ShowBalanceIntentUI;
+		};
+		8C995D322D86768E008030EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58EAA2282D7900F500083F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C995D1B2D86768E008030EF;
+			remoteInfo = ShowBalanceIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C2600952D7E773A00827D8E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8C995D312D86768E008030EF /* ShowBalanceIntentUI.appex in Embed Foundation Extensions */,
+				8C2600902D7E773A00827D8E /* ShowTopStockIntentExtension.appex in Embed Foundation Extensions */,
+				8C995D342D86768E008030EF /* ShowBalanceIntent.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C995D5B2D879A3F008030EF /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		58EAA2302D7900F500083F5E /* RiyalVest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiyalVest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58EAA2402D7900F700083F5E /* RiyalVestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiyalVestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58EAA24A2D7900F700083F5E /* RiyalVestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiyalVestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C26007A2D7E773900827D8E /* ShowTopStockIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShowTopStockIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C26007C2D7E773900827D8E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8C26007E2D7E773900827D8E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		8C2600962D7E77BA00827D8E /* ShowTopStockIntentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShowTopStockIntentExtension.entitlements; sourceTree = "<group>"; };
+		8C2600A22D7E8FD600827D8E /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		8C2600AD2D7E8FD600827D8E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		8C995D1C2D86768E008030EF /* ShowBalanceIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShowBalanceIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C995D262D86768E008030EF /* ShowBalanceIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShowBalanceIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C995D472D86A488008030EF /* ShowBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBalance.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8C26005E2D7E3C2100827D8E /* Exceptions for "RiyalVest" folder in "RiyalVest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 58EAA22F2D7900F500083F5E /* RiyalVest */;
+		};
+		8C2600942D7E773A00827D8E /* Exceptions for "ShowTopStockIntent" folder in "ShowTopStockIntentExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8C2600792D7E773900827D8E /* ShowTopStockIntentExtension */;
+		};
+		8C26009C2D7E7F9B00827D8E /* Exceptions for "RiyalVest" folder in "ShowTopStockIntentExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Stock.swift,
+			);
+			target = 8C2600792D7E773900827D8E /* ShowTopStockIntentExtension */;
+		};
+		8C995D382D86768E008030EF /* Exceptions for "ShowBalanceIntentUI" folder in "ShowBalanceIntentUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8C995D252D86768E008030EF /* ShowBalanceIntentUI */;
+		};
+		8C995D3C2D86768E008030EF /* Exceptions for "ShowBalanceIntent" folder in "ShowBalanceIntent" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8C995D1B2D86768E008030EF /* ShowBalanceIntent */;
+		};
+		8C995D412D867E1E008030EF /* Exceptions for "RiyalVest" folder in "ShowBalanceIntent" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ShowBalanceIntent.intentdefinition,
+			);
+			target = 8C995D1B2D86768E008030EF /* ShowBalanceIntent */;
+		};
+		8C995D422D867E1E008030EF /* Exceptions for "RiyalVest" folder in "ShowBalanceIntentUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ShowBalanceIntent.intentdefinition,
+			);
+			target = 8C995D252D86768E008030EF /* ShowBalanceIntentUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		58EAA2322D7900F500083F5E /* RiyalVest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8C26005E2D7E3C2100827D8E /* Exceptions for "RiyalVest" folder in "RiyalVest" target */,
+				8C26009C2D7E7F9B00827D8E /* Exceptions for "RiyalVest" folder in "ShowTopStockIntentExtension" target */,
+				8C995D412D867E1E008030EF /* Exceptions for "RiyalVest" folder in "ShowBalanceIntent" target */,
+				8C995D422D867E1E008030EF /* Exceptions for "RiyalVest" folder in "ShowBalanceIntentUI" target */,
+			);
+			path = RiyalVest;
+			sourceTree = "<group>";
+		};
+		58EAA2432D7900F700083F5E /* RiyalVestTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RiyalVestTests;
+			sourceTree = "<group>";
+		};
+		58EAA24D2D7900F700083F5E /* RiyalVestUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RiyalVestUITests;
+			sourceTree = "<group>";
+		};
+		8C2600802D7E773900827D8E /* ShowTopStockIntent */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8C2600942D7E773A00827D8E /* Exceptions for "ShowTopStockIntent" folder in "ShowTopStockIntentExtension" target */,
+			);
+			path = ShowTopStockIntent;
+			sourceTree = "<group>";
+		};
+		8C995D1E2D86768E008030EF /* ShowBalanceIntent */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8C995D3C2D86768E008030EF /* Exceptions for "ShowBalanceIntent" folder in "ShowBalanceIntent" target */,
+			);
+			path = ShowBalanceIntent;
+			sourceTree = "<group>";
+		};
+		8C995D282D86768E008030EF /* ShowBalanceIntentUI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8C995D382D86768E008030EF /* Exceptions for "ShowBalanceIntentUI" folder in "ShowBalanceIntentUI" target */,
+			);
+			path = ShowBalanceIntentUI;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58EAA22D2D7900F500083F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58EAA23D2D7900F700083F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58EAA2472D7900F700083F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C2600772D7E773900827D8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C26007F2D7E773900827D8E /* SwiftUI.framework in Frameworks */,
+				8C26007D2D7E773900827D8E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C995D192D86768E008030EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C995D1D2D86768E008030EF /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C995D232D86768E008030EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C995D272D86768E008030EF /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58EAA2272D7900F500083F5E = {
+			isa = PBXGroup;
+			children = (
+				8C995D472D86A488008030EF /* ShowBalance.swift */,
+				8C2600962D7E77BA00827D8E /* ShowTopStockIntentExtension.entitlements */,
+				58EAA2322D7900F500083F5E /* RiyalVest */,
+				58EAA2432D7900F700083F5E /* RiyalVestTests */,
+				58EAA24D2D7900F700083F5E /* RiyalVestUITests */,
+				8C2600802D7E773900827D8E /* ShowTopStockIntent */,
+				8C995D1E2D86768E008030EF /* ShowBalanceIntent */,
+				8C995D282D86768E008030EF /* ShowBalanceIntentUI */,
+				8C26007B2D7E773900827D8E /* Frameworks */,
+				58EAA2312D7900F500083F5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58EAA2312D7900F500083F5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58EAA2302D7900F500083F5E /* RiyalVest.app */,
+				58EAA2402D7900F700083F5E /* RiyalVestTests.xctest */,
+				58EAA24A2D7900F700083F5E /* RiyalVestUITests.xctest */,
+				8C26007A2D7E773900827D8E /* ShowTopStockIntentExtension.appex */,
+				8C995D1C2D86768E008030EF /* ShowBalanceIntent.appex */,
+				8C995D262D86768E008030EF /* ShowBalanceIntentUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C26007B2D7E773900827D8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C26007C2D7E773900827D8E /* WidgetKit.framework */,
+				8C26007E2D7E773900827D8E /* SwiftUI.framework */,
+				8C2600A22D7E8FD600827D8E /* Intents.framework */,
+				8C2600AD2D7E8FD600827D8E /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58EAA22F2D7900F500083F5E /* RiyalVest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58EAA2542D7900F700083F5E /* Build configuration list for PBXNativeTarget "RiyalVest" */;
+			buildPhases = (
+				58EAA22C2D7900F500083F5E /* Sources */,
+				58EAA22D2D7900F500083F5E /* Frameworks */,
+				58EAA22E2D7900F500083F5E /* Resources */,
+				8C2600952D7E773A00827D8E /* Embed Foundation Extensions */,
+				8C995D5B2D879A3F008030EF /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C26008F2D7E773A00827D8E /* PBXTargetDependency */,
+				8C995D302D86768E008030EF /* PBXTargetDependency */,
+				8C995D332D86768E008030EF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				58EAA2322D7900F500083F5E /* RiyalVest */,
+			);
+			name = RiyalVest;
+			packageProductDependencies = (
+			);
+			productName = RiyalVest;
+			productReference = 58EAA2302D7900F500083F5E /* RiyalVest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58EAA23F2D7900F700083F5E /* RiyalVestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58EAA2572D7900F700083F5E /* Build configuration list for PBXNativeTarget "RiyalVestTests" */;
+			buildPhases = (
+				58EAA23C2D7900F700083F5E /* Sources */,
+				58EAA23D2D7900F700083F5E /* Frameworks */,
+				58EAA23E2D7900F700083F5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58EAA2422D7900F700083F5E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				58EAA2432D7900F700083F5E /* RiyalVestTests */,
+			);
+			name = RiyalVestTests;
+			packageProductDependencies = (
+			);
+			productName = RiyalVestTests;
+			productReference = 58EAA2402D7900F700083F5E /* RiyalVestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		58EAA2492D7900F700083F5E /* RiyalVestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58EAA25A2D7900F700083F5E /* Build configuration list for PBXNativeTarget "RiyalVestUITests" */;
+			buildPhases = (
+				58EAA2462D7900F700083F5E /* Sources */,
+				58EAA2472D7900F700083F5E /* Frameworks */,
+				58EAA2482D7900F700083F5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58EAA24C2D7900F700083F5E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				58EAA24D2D7900F700083F5E /* RiyalVestUITests */,
+			);
+			name = RiyalVestUITests;
+			packageProductDependencies = (
+			);
+			productName = RiyalVestUITests;
+			productReference = 58EAA24A2D7900F700083F5E /* RiyalVestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8C2600792D7E773900827D8E /* ShowTopStockIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C2600912D7E773A00827D8E /* Build configuration list for PBXNativeTarget "ShowTopStockIntentExtension" */;
+			buildPhases = (
+				8C2600762D7E773900827D8E /* Sources */,
+				8C2600772D7E773900827D8E /* Frameworks */,
+				8C2600782D7E773900827D8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8C2600802D7E773900827D8E /* ShowTopStockIntent */,
+			);
+			name = ShowTopStockIntentExtension;
+			packageProductDependencies = (
+			);
+			productName = ShowTopStockIntentExtension;
+			productReference = 8C26007A2D7E773900827D8E /* ShowTopStockIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8C995D1B2D86768E008030EF /* ShowBalanceIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C995D392D86768E008030EF /* Build configuration list for PBXNativeTarget "ShowBalanceIntent" */;
+			buildPhases = (
+				8C995D182D86768E008030EF /* Sources */,
+				8C995D192D86768E008030EF /* Frameworks */,
+				8C995D1A2D86768E008030EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8C995D1E2D86768E008030EF /* ShowBalanceIntent */,
+			);
+			name = ShowBalanceIntent;
+			packageProductDependencies = (
+			);
+			productName = ShowBalanceIntent;
+			productReference = 8C995D1C2D86768E008030EF /* ShowBalanceIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8C995D252D86768E008030EF /* ShowBalanceIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C995D352D86768E008030EF /* Build configuration list for PBXNativeTarget "ShowBalanceIntentUI" */;
+			buildPhases = (
+				8C995D222D86768E008030EF /* Sources */,
+				8C995D232D86768E008030EF /* Frameworks */,
+				8C995D242D86768E008030EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8C995D282D86768E008030EF /* ShowBalanceIntentUI */,
+			);
+			name = ShowBalanceIntentUI;
+			packageProductDependencies = (
+			);
+			productName = ShowBalanceIntentUI;
+			productReference = 8C995D262D86768E008030EF /* ShowBalanceIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58EAA2282D7900F500083F5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					58EAA22F2D7900F500083F5E = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					58EAA23F2D7900F700083F5E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 58EAA22F2D7900F500083F5E;
+					};
+					58EAA2492D7900F700083F5E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 58EAA22F2D7900F500083F5E;
+					};
+					8C2600792D7E773900827D8E = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					8C995D1B2D86768E008030EF = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					8C995D252D86768E008030EF = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 58EAA22B2D7900F500083F5E /* Build configuration list for PBXProject "RiyalVest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58EAA2272D7900F500083F5E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 58EAA2312D7900F500083F5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58EAA22F2D7900F500083F5E /* RiyalVest */,
+				58EAA23F2D7900F700083F5E /* RiyalVestTests */,
+				58EAA2492D7900F700083F5E /* RiyalVestUITests */,
+				8C2600792D7E773900827D8E /* ShowTopStockIntentExtension */,
+				8C995D1B2D86768E008030EF /* ShowBalanceIntent */,
+				8C995D252D86768E008030EF /* ShowBalanceIntentUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58EAA22E2D7900F500083F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58EAA23E2D7900F700083F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58EAA2482D7900F700083F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C2600782D7E773900827D8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C995D1A2D86768E008030EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C995D242D86768E008030EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58EAA22C2D7900F500083F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C995D482D86A488008030EF /* ShowBalance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58EAA23C2D7900F700083F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58EAA2462D7900F700083F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C2600762D7E773900827D8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C995D182D86768E008030EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C995D222D86768E008030EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58EAA2422D7900F700083F5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58EAA22F2D7900F500083F5E /* RiyalVest */;
+			targetProxy = 58EAA2412D7900F700083F5E /* PBXContainerItemProxy */;
+		};
+		58EAA24C2D7900F700083F5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58EAA22F2D7900F500083F5E /* RiyalVest */;
+			targetProxy = 58EAA24B2D7900F700083F5E /* PBXContainerItemProxy */;
+		};
+		8C26008F2D7E773A00827D8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C2600792D7E773900827D8E /* ShowTopStockIntentExtension */;
+			targetProxy = 8C26008E2D7E773A00827D8E /* PBXContainerItemProxy */;
+		};
+		8C995D302D86768E008030EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C995D252D86768E008030EF /* ShowBalanceIntentUI */;
+			targetProxy = 8C995D2F2D86768E008030EF /* PBXContainerItemProxy */;
+		};
+		8C995D332D86768E008030EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C995D1B2D86768E008030EF /* ShowBalanceIntent */;
+			targetProxy = 8C995D322D86768E008030EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		58EAA2522D7900F700083F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58EAA2532D7900F700083F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58EAA2552D7900F700083F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RiyalVest/RiyalVest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"RiyalVest/Preview Content\"";
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RiyalVest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = raghad.RiyalVest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		58EAA2562D7900F700083F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RiyalVest/RiyalVest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"RiyalVest/Preview Content\"";
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RiyalVest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = raghad.RiyalVest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		58EAA2582D7900F700083F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smayah.RiyalVestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiyalVest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RiyalVest";
+			};
+			name = Debug;
+		};
+		58EAA2592D7900F700083F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smayah.RiyalVestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiyalVest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RiyalVest";
+			};
+			name = Release;
+		};
+		58EAA25B2D7900F700083F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smayah.RiyalVestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RiyalVest;
+			};
+			name = Debug;
+		};
+		58EAA25C2D7900F700083F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smayah.RiyalVestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RiyalVest;
+			};
+			name = Release;
+		};
+		8C2600922D7E773A00827D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ShowTopStockIntentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShowTopStockIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShowTopStockIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = raghad.RiyalVest.ShowTopStockIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C2600932D7E773A00827D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ShowTopStockIntentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShowTopStockIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShowTopStockIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = raghad.RiyalVest.ShowTopStockIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C995D362D86768E008030EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShowBalanceIntentUI/ShowBalanceIntentUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShowBalanceIntentUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShowBalanceIntentUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = raghad.RiyalVest.ShowBalanceIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C995D372D86768E008030EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShowBalanceIntentUI/ShowBalanceIntentUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShowBalanceIntentUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShowBalanceIntentUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = raghad.RiyalVest.ShowBalanceIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C995D3A2D86768E008030EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShowBalanceIntent/ShowBalanceIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShowBalanceIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShowBalanceIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = raghad.RiyalVest.ShowBalanceIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C995D3B2D86768E008030EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShowBalanceIntent/ShowBalanceIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJ77XVNA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShowBalanceIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShowBalanceIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = raghad.RiyalVest.ShowBalanceIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58EAA22B2D7900F500083F5E /* Build configuration list for PBXProject "RiyalVest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58EAA2522D7900F700083F5E /* Debug */,
+				58EAA2532D7900F700083F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58EAA2542D7900F700083F5E /* Build configuration list for PBXNativeTarget "RiyalVest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58EAA2552D7900F700083F5E /* Debug */,
+				58EAA2562D7900F700083F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58EAA2572D7900F700083F5E /* Build configuration list for PBXNativeTarget "RiyalVestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58EAA2582D7900F700083F5E /* Debug */,
+				58EAA2592D7900F700083F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58EAA25A2D7900F700083F5E /* Build configuration list for PBXNativeTarget "RiyalVestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58EAA25B2D7900F700083F5E /* Debug */,
+				58EAA25C2D7900F700083F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C2600912D7E773A00827D8E /* Build configuration list for PBXNativeTarget "ShowTopStockIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2600922D7E773A00827D8E /* Debug */,
+				8C2600932D7E773A00827D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C995D352D86768E008030EF /* Build configuration list for PBXNativeTarget "ShowBalanceIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C995D362D86768E008030EF /* Debug */,
+				8C995D372D86768E008030EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C995D392D86768E008030EF /* Build configuration list for PBXNativeTarget "ShowBalanceIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C995D3A2D86768E008030EF /* Debug */,
+				8C995D3B2D86768E008030EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58EAA2282D7900F500083F5E /* Project object */;
+}
