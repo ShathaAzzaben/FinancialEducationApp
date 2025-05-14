@@ -8,4 +8,5 @@ struct Stock: Identifiable, Codable {
     let change: String
     let changePercent: String
     let name: String
+    let prediction: String
 }

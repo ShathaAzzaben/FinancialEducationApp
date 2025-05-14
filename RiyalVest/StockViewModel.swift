@@ -1,8 +1,9 @@
 import Foundation
 import Combine
 import WidgetKit
-
+import CoreML
 class StockViewModel: ObservableObject {
+    
     @Published var stocks: [Stock] = []
     @Published var lastFetchedStocks: [Stock] = [] // آخر بيانات تم جلبها بنجاح
     private var cancellables = Set<AnyCancellable>()
@@ -22,9 +23,10 @@ class StockViewModel: ObservableObject {
             }
         }
     }
-    
+   
     func fetchStocks() async {
         for symbol in symbols {
+            
             let urlString = "https://api.twelvedata.com/time_series?symbol=\(symbol)&interval=5min&apikey=\(apiKey)&country=United States"
             guard let url = URL(string: urlString) else { return }
             
@@ -92,7 +94,19 @@ struct StockResponse: Codable {
     let status: String? // حالة الطلب (مثلاً "ok" أو "error")
     let meta: Meta?
     let values: [Value]?
-    
+    func Model( datetime: String, open: String, high: String, low: String, close: String, volume: String) -> Classifier_1Output? {
+        do {
+            let config = MLModelConfiguration ()
+            let model = try
+            Classifier_1(configuration: config)
+            let prediction = try model.prediction(Date: datetime, Open: (open as NSString).doubleValue, High: (high as NSString).doubleValue, Low: (low as NSString).doubleValue, Close_t_: (close as NSString).doubleValue, Volume: (volume as NSString).doubleValue)
+            return prediction
+        }
+        catch {
+            
+        }
+        return nil
+    }
     func toStock(name: String) -> Stock? {
         guard status == "ok", let meta = meta, let values = values, let latestValue = values.first else {
             return nil
@@ -105,12 +119,21 @@ struct StockResponse: Codable {
         let change = (Double(latestValue.close) ?? 0) - (Double(previousValue.close) ?? 0)
         let changePercent = (change / (Double(previousValue.close) ?? 1)) * 100
         
+        let prediction = Model(
+                datetime: latestValue.datetime,
+                open: latestValue.open,
+                high: latestValue.high,
+                low: latestValue.low,
+                close: latestValue.close,
+                volume: latestValue.volume)
+        
         return Stock(
             symbol: meta.symbol,
             price: roundedPrice,
             change: String(format: "%.2f", change),
             changePercent: String(format: "%.2f%%", changePercent),
-            name: name
+            name: name,
+            prediction: prediction!.Label
         )
     }
 }

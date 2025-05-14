@@ -13,8 +13,8 @@ struct Provider: TimelineProvider {
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let sampleStocks = [
-            Stock(symbol: "AAPL", price: "150.00", change: "+2.00", changePercent: "+1.35%", name: "Apple Inc."),
-            Stock(symbol: "MSFT", price: "300.00", change: "+1.50", changePercent: "+0.50%", name: "Microsoft Corp.")
+            Stock(symbol: "AAPL", price: "150.00", change: "+2.00", changePercent: "+1.35%", name: "Apple Inc.",prediction: "Buy"),
+            Stock(symbol: "MSFT", price: "300.00", change: "+1.50", changePercent: "+0.50%", name: "Microsoft Corp.",prediction: "Buy")
         ]
         completion(SimpleEntry(date: Date(), topStocks: sampleStocks))
     }
@@ -113,9 +113,9 @@ struct StockWidget: Widget {
     StockWidget()
 } timeline: {
     let mockStocks = [
-        Stock(symbol: "AAPL", price: "150.00", change: "+2.00", changePercent: "+1.35%", name: "Apple Inc."),
-        Stock(symbol: "MSFT", price: "300.00", change: "+1.50", changePercent: "+0.50%", name: "Microsoft Corp."),
-        Stock(symbol: "GOOGL", price: "2800.00", change: "-5.00", changePercent: "-0.18%", name: "Alphabet Inc.")
+        Stock(symbol: "AAPL", price: "150.00", change: "+2.00", changePercent: "+1.35%", name: "Apple Inc.",prediction: "Buy"),
+        Stock(symbol: "MSFT", price: "300.00", change: "+1.50", changePercent: "+0.50%", name: "Microsoft Corp.",prediction: "Buy"),
+        Stock(symbol: "GOOGL", price: "2800.00", change: "-5.00", changePercent: "-0.18%", name: "Alphabet Inc.",prediction: "Buy")
     ]
     
     SimpleEntry(date: Date(), topStocks: mockStocks)

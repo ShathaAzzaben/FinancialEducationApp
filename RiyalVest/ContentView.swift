@@ -1,5 +1,6 @@
 import SwiftUI
 
+
 struct ContentView: View {
     @StateObject private var viewModel = StockViewModel()
     var userName: String
@@ -59,6 +60,8 @@ struct ContentView: View {
                                             .foregroundColor(.white) // نص أبيض
                                         Text("\(stock.change) (\(stock.changePercent))")
                                             .foregroundColor(stock.change.contains("-") ? .red : .green)
+                                        Text (stock.prediction).font(.subheadline).foregroundColor(.white)
+                                        
                                     }
                              
                                     VStack(alignment: .leading) {
