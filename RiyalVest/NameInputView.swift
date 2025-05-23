@@ -4,7 +4,7 @@ struct NameInputView: View {
     @State private var navigateToContentView = false
     @State private var balance: Double = 50000
     @State private var showSplash = true  // حالة لعرض شاشة السبلاش
-
+// task s7 "Develop the Home Screen with a Welcome Message and Name Input"
     var body: some View {
         NavigationStack {
             ZStack {
@@ -79,7 +79,7 @@ struct NameInputView: View {
         }
     }
 }
-
+// task s6 start "Implement the Splash Screen with the Logo"
 // شاشة السبلاش
 struct SplashScreen: View {
     var body: some View {
