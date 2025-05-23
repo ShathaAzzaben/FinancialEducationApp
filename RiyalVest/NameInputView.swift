@@ -4,7 +4,7 @@ struct NameInputView: View {
     @State private var navigateToContentView = false
     @State private var balance: Double = 50000
     @State private var showSplash = true  // حالة لعرض شاشة السبلاش
-
+// test 
     var body: some View {
         NavigationStack {
             ZStack {
