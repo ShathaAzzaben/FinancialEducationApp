@@ -2,7 +2,7 @@ import SwiftUI
 import Charts
 import Intents
 import IntentsUI
-
+// S8: Track Real-Time Stock Market Data and My Virtual Balance
 struct ProfileView: View {
     var userName: String
     
@@ -42,7 +42,7 @@ struct ProfileView: View {
                 endPoint: .bottom
             )
             .edgesIgnoringSafeArea(.all)
-            
+            // S9: View My Portfolio Performance
             ScrollView {
                 VStack(spacing: 20) {
                     // عنوان الملف الشخصي

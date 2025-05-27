@@ -2,6 +2,7 @@ import SwiftUI
 
 
 struct ContentView: View {
+    // S11: Fetch and Display Real-Time Stock Data from the API
     @StateObject private var viewModel = StockViewModel()
     var userName: String
     @Binding var balance: Double // تغيير balance إلى @Binding
@@ -10,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                // خلفية متدرّجة من اللون الأزرق الداكن (#05216F) إلى الأسود
+               
                 LinearGradient(
                     gradient: Gradient(colors: [
                         Color(red: 5/255, green: 33/255, blue: 111/255),
@@ -51,7 +52,9 @@ struct ContentView: View {
                                         Text(stock.name)
                                             .font(.subheadline)
                                             .foregroundColor(.white.opacity(0.8)) // نص أبيض شفاف
-                                    }
+                                        // S14: Get Stock Recommendations
+                                        Text ("✨ AI Suggests: \(stock.prediction) ").font(.caption).foregroundColor(.white).background(stock.prediction == "Buy" ? Color.green.opacity(0.15) : Color.orange.opacity(0.15)).cornerRadius(5)
+                                                                              }
                                     
                                     Spacer()
                                     
@@ -60,8 +63,7 @@ struct ContentView: View {
                                             .foregroundColor(.white) // نص أبيض
                                         Text("\(stock.change) (\(stock.changePercent))")
                                             .foregroundColor(stock.change.contains("-") ? .red : .green)
-                                        Text (stock.prediction).font(.subheadline).foregroundColor(.white)
-                                        
+                                       
                                     }
                              
                                     VStack(alignment: .leading) {

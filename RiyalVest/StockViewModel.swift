@@ -94,11 +94,12 @@ struct StockResponse: Codable {
     let status: String? // حالة الطلب (مثلاً "ok" أو "error")
     let meta: Meta?
     let values: [Value]?
-    func Model( datetime: String, open: String, high: String, low: String, close: String, volume: String) -> Classifier_1Output? {
+    // S13: Connect the Model with the App to Provide Suggestions
+    func Model( datetime: String, open: String, high: String, low: String, close: String, volume: String) -> RiyalVestModel_2Output? {
         do {
             let config = MLModelConfiguration ()
             let model = try
-            Classifier_1(configuration: config)
+            RiyalVestModel_2(configuration: config)
             let prediction = try model.prediction(Date: datetime, Open: (open as NSString).doubleValue, High: (high as NSString).doubleValue, Low: (low as NSString).doubleValue, Close_t_: (close as NSString).doubleValue, Volume: (volume as NSString).doubleValue)
             return prediction
         }

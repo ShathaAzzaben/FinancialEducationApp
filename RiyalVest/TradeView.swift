@@ -17,7 +17,7 @@ extension Color {
 }
 
 
-
+//S10: Practice Buying and Selling Stocks with Virtual Capital
 struct TradeView: View {
     var stock: Stock
     @State private var quantity: Int = 0
@@ -47,8 +47,8 @@ struct TradeView: View {
                     // TradingView Mini Chart Widget
                     TradingViewMiniChart(symbol: stock.symbol)
                         .frame(height: 300) // ارتفاع الرسم البياني
-                        .cornerRadius(10)
-                        .padding(.horizontal)
+                        .cornerRadius(2)
+                        .border(Color.gray, width: 2)
                       
                     
                     Text(stock.name)
@@ -198,12 +198,27 @@ struct TradingViewMiniChart: UIViewRepresentable {
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+                body {
+                    margin: 0;
+                    background-color: transparent;
+                }
+                .tradingview-widget-copyright {
+                    color: white !important;
+                    font-size: 12px;
+                    text-align: center;
+                    padding-top: 8px;
+                }
+                .tradingview-widget-copyright a {
+                    color: white !important;
+                    text-decoration: none;
+                }
+            </style>
         </head>
         <body>
         <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
           <div class="tradingview-widget-container__widget"></div>
-          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
           <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
           {
           "symbol": "\(symbol)",
